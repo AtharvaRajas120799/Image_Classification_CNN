@@ -1,104 +1,37 @@
-# 🧠 Image Classification using Convolutional Neural Networks (CNN)
+# Image Classification using Convolutional Neural Networks
 
-This repository contains a complete project for building and training a **Convolutional Neural Network (CNN)** to classify images of **Homer Simpson vs Bart Simpson**.
-The model is implemented using **TensorFlow/Keras** and includes data preprocessing, training, evaluation, and visualization.
+A complete CNN pipeline built from scratch in TensorFlow/Keras — covering data preprocessing, augmentation, model architecture design, training, and evaluation with quantitative metrics.
 
-For the full, well-structured project, please explore:
+## What This Project Does
 
-👉 cnn_project/
+- Builds a custom CNN architecture (not a pre-trained model) for binary image classification
+- Implements data augmentation (rotation, flip, zoom) to improve generalization on small datasets
+- Trains with systematic hyperparameter selection: learning rate, batch size, epochs, dropout
+- Evaluates model performance using confusion matrix, classification report (precision, recall, F1), and training/validation accuracy curves
 
-------------------------------------------------------------
+## Technical Stack
 
-## 📂 Repository Structure
+Python, TensorFlow/Keras, NumPy, OpenCV, Matplotlib, Seaborn, Scikit-Learn
 
-Image_Classification_CNN/
-│
-├── cnn_project/               # Organized ML project
-│   ├── src/                   # Python source code
-│   │    └── model_code.py
-│   ├── models/                # Trained/saved models (you can upload later)
-│   ├── notebooks/             # Jupyter notebooks (optional)
-│   └── README.md              # Detailed project documentation
-│
-├── image_classification_cnn.py   # Old single-file script (optional)
-└── README.md                      # Main repository README
+## Project Structure
+cnn_project/
+├── src/model_code.py      # Training pipeline
+├── models/                # Saved model weights
+└── README.md              # Detailed documentation
 
-------------------------------------------------------------
+## How to Run
 
-## 🚀 Project Overview
+```bash
+git clone https://github.com/AtharvaRajas120799/Image_Classification_CNN.git
+cd Image_Classification_CNN/cnn_project/src
+pip install tensorflow numpy matplotlib seaborn scikit-learn opencv-python
+python model_code.py
+```
 
-This CNN project demonstrates:
+## What I Learned
 
-- Image classification using a custom CNN architecture  
-- Data augmentation for improved generalization  
-- Visualization of training performance  
-- Evaluation using confusion matrix & classification report  
-- Prediction on sample images  
+This was my first end-to-end ML project. I built it to understand the full pipeline — not just calling model.fit(), but understanding why specific architectures work, how augmentation prevents overfitting, and how to evaluate a model beyond just accuracy. The skills I developed here (data pipelines, model evaluation, systematic experimentation) directly informed my later work on 3D perception at TU Munich.
 
-The dataset includes images of Bart and Homer from The Simpsons.
+## Author
 
-------------------------------------------------------------
-
-## 🧪 How to Run the Project
-
-1. Clone the repository:
-   git clone https://github.com/AtharvaRajas120799/Image_Classification_CNN.git
-   cd Image_Classification_CNN/cnn_project/src
-
-2. Install dependencies:
-   pip install tensorflow numpy matplotlib seaborn scikit-learn opencv-python
-
-3. Run the training script:
-   python model_code.py
-
-------------------------------------------------------------
-
-## 📘 Detailed Documentation
-
-See full documentation here:
-cnn_project/README.md
-
-------------------------------------------------------------
-
-## 🧩 Tech Stack
-
-- Python
-- TensorFlow / Keras
-- NumPy
-- Matplotlib / Seaborn
-- Scikit-Learn
-- OpenCV
-
-------------------------------------------------------------
-
-## 📦 Dataset
-
-Dataset is not included in GitHub.
-Upload your dataset to Google Drive or local storage, then update paths inside the script.
-
-------------------------------------------------------------
-
-## 📈 Example Outputs
-
-You may add later:
-- Model accuracy curves  
-- Confusion matrix  
-- Predictions on sample images  
-
-------------------------------------------------------------
-
-## 🤝 Contributing
-
-Feel free to fork this repository and submit pull requests.
-
-------------------------------------------------------------
-
-## 📄 License
-
-MIT License.
-
-------------------------------------------------------------
-
-## ⭐ Support the Project
-
-If you found this helpful, consider giving the repo a star ⭐ on GitHub!
+**Atharva Rajas** — M.Eng. Mechatronics & Robotics | [GitHub](https://github.com/AtharvaRajas120799)
